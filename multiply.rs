@@ -5,6 +5,12 @@ fn main() {
     let mut summa: u32 = 0;
     
     for i in (0..MAX_NUMBER).step_by(3) {
+        
+        if(i % 5 == 0)
+        {
+            continue;
+        }
+            
         summa += i;
     }
     
@@ -12,5 +18,5 @@ fn main() {
         summa += j;
     }
     
-    println!("{}", summa); //266333
+    println!("{}", summa);
 }
